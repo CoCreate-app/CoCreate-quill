@@ -104,6 +104,7 @@ export class QuillBinding {
           }
         }
         quill.updateContents(delta, 'yjs')
+        el.crudSetted = true;
       })
     }
     type.observe(this._typeObserver)
