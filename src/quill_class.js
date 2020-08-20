@@ -6,7 +6,7 @@ import * as Y from 'yjs'
 import { QuillBinding } from './js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
-import { UserCursor } from '../y-client/src/utils/cursor/userCursor_class'
+import { UserCursor } from '../../../CoCreate-components/CoCreate-y/y-client/src/utils/cursor/userCursor_class'
 
 Quill.register('modules/cursors', QuillCursors)
 
@@ -76,13 +76,13 @@ window.addEventListener('load', () => {
 					if (element.crudSetted) {
 						return;
 					}
-					CoCreate.getDocument({
-						collection: collection,
-						document_id: document_id,
-						metadata: {
-							type: 'crdt'
-						}
-					})
+					// CoCreate.getDocument({
+					// 	collection: collection,
+					// 	document_id: document_id,
+					// 	metadata: {
+					// 		type: 'crdt'
+					// 	}
+					// })
 				}, 1000);
 				new UserCursor(provider);
 			}
@@ -107,7 +107,7 @@ window.addEventListener('load', () => {
 			
 			elements.forEach(function(element,index){
 				if (CoCreateUtils) {
-					if (CoCreateUtils.getInitialized(element)) {
+					if (CoCreateInit.getInitialized(element)) {
 						return;
 					}
 				}
@@ -122,7 +122,7 @@ window.addEventListener('load', () => {
 					_this.initEvent(element, editor)
 					
 					if (CoCreateUtils) {
-						CoCreateUtils.setInitialized(element)
+						CoCreateInit.setInitialized(element)
 					}
 					_this.elements.push(element)
 					
@@ -138,52 +138,52 @@ window.addEventListener('load', () => {
 		
 		initSocketEvent() {
 			const self = this;
-			CoCreateSocket.listen('getDocument', function(data) {
-				if (!data.metadata || data.metadata.type != "crdt") {
-					return;
-				}
+			// CoCreateSocket.listen('getDocument', function(data) {
+			// 	if (!data.metadata || data.metadata.type != "crdt") {
+			// 		return;
+			// 	}
 				
-				self.elements.forEach((quill) => {
-					const collection = quill.getAttribute('data-collection')
-					const id = quill.getAttribute('data-document_id')
-					const name = quill.getAttribute('name')
+			// 	self.elements.forEach((quill) => {
+			// 		const collection = quill.getAttribute('data-collection')
+			// 		const id = quill.getAttribute('data-document_id')
+			// 		const name = quill.getAttribute('name')
 					
-					if (quill.crudSetted === true) {
-						return;
-					}
-					if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-						CoCreate.replaceDataCrdt({
-							collection: collection,
-							document_id: id,
-							name: name,
-							value: data['data'][name],
-						})
-						quill.crudSetted = true;
+			// 		if (quill.crudSetted === true) {
+			// 			return;
+			// 		}
+			// 		if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
+			// 			CoCreate.replaceDataCrdt({
+			// 				collection: collection,
+			// 				document_id: id,
+			// 				name: name,
+			// 				value: data['data'][name],
+			// 			})
+			// 			quill.crudSetted = true;
 
-					}
-				});
-				// self.editors.forEach((editor) => {
-				// 	const el = editor.options.container
-				// 	const collection = el.getAttribute('data-collection')
-				// 	const id = el.getAttribute('data-document_id')
-				// 	const name = el.getAttribute('name')
+			// 		}
+			// 	});
+			// 	// self.editors.forEach((editor) => {
+			// 	// 	const el = editor.options.container
+			// 	// 	const collection = el.getAttribute('data-collection')
+			// 	// 	const id = el.getAttribute('data-document_id')
+			// 	// 	const name = el.getAttribute('name')
 					
-				// 	if (el.crudSetted === true) {
-				// 		return;
-				// 	}
-				// 	if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-				// 		// CoCreate.replaceDataCrdt({
-				// 		// 	collection: collection,
-				// 		// 	document_id: id,
-				// 		// 	name: name,
-				// 		// 	value: data['data'][name],
-				// 		// })
+			// 	// 	if (el.crudSetted === true) {
+			// 	// 		return;
+			// 	// 	}
+			// 	// 	if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
+			// 	// 		// CoCreate.replaceDataCrdt({
+			// 	// 		// 	collection: collection,
+			// 	// 		// 	document_id: id,
+			// 	// 		// 	name: name,
+			// 	// 		// 	value: data['data'][name],
+			// 	// 		// })
 						
-				// 		editor.setText(data['data'][name]);
-				// 		el.crudSetted = true;
-				// 	}
-				// });
-			});
+			// 	// 		editor.setText(data['data'][name]);
+			// 	// 		el.crudSetted = true;
+			// 	// 	}
+			// 	// });
+			// });
 		}
 		
 		initEvent(element, editor) {
