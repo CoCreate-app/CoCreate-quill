@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    'CoCreate-quill': './src/quill_class.js',
+    'CoCreate-quill': './src/CoCreate-quill.js',
   },
   output: {
     globalObject: 'self',
