@@ -6,13 +6,12 @@ import * as Y from 'yjs'
 import { QuillBinding } from './js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
-import { UserCursor } from '../../../CoCreate-components/CoCreate-y/y-client/src/utils/cursor/userCursor_class'
+import { UserCursor } from '../../../CoCreate-components/CoCreate-crdt/src/utils/cursor/userCursor_class'
 
 Quill.register('modules/cursors', QuillCursors)
 
 
 window.addEventListener('load', () => {
-
 	/**
 	 * Create all  Quills with class .quill
 	 * @private
@@ -29,26 +28,33 @@ window.addEventListener('load', () => {
 			this.selector = selector;
 			this.editors = [];
 			this.bindings = [];
-			this.organization_Id = config.organization_Id || 'randomOrganizationID'
+			this.organization_Id = config.organization_Id || 'randomOrganizationID';
+			this.themeQuill = 'snow'
+			this.onNewEditor = null;
+			//this.themeQuill = typeof window.config.themeQuill != 'undefined' ? window.config.themeQuill : 'snow';
 		}
 		
 		_createEditor(editorContainer){
-				var editor = new Quill(editorContainer, {
-						modules: {
-							cursors: true,
-							toolbar: [
-								[{ header: [1, 2, false] }],
-								['bold', 'italic', 'underline'],
-								['image', 'code-block']
-							],
-							history: {
-								userOnly: true
-							}
-						},
-						placeholder: 'Start collaborating...',
-						theme: 'snow' // or 'bubble'
-					});
-				this.editors.push(editor);
+			let themeQuill = editorContainer.dataset['theme'] ? editorContainer.dataset['theme'] : this.themeQuill
+			console.log("ThemeQuill => "+themeQuill)
+			var editor = new Quill(editorContainer, {
+					modules: {
+						cursors: true,
+						toolbar: [
+							[{ header: [1, 2, false] }],
+							['bold', 'italic', 'underline'],
+							['image', 'code-block']
+						],
+						history: {
+							userOnly: true
+						}
+					},
+					placeholder: 'Start collaborating...',
+					theme: themeQuill // 'snow' or  'bubble'
+				});
+			this.editors.push(editor);
+			if(this.onNewEditor)
+				this.onNewEditor(editor);
 			return editor;
 		}
 		
@@ -64,11 +70,11 @@ window.addEventListener('load', () => {
 			let document_id = element.getAttribute('data-document_id')
 
 			if (collection && name && document_id) {
-				const id = CoCreateYSocket.generateID(config.organization_Id, collection, document_id, name);
-				CoCreateCrdt.createDoc(id, element);
+				const id = CoCreate.crdt.generateID(config.organization_Id, collection, document_id, name);
+				CoCreate.crdt.createDoc(id, element);
 				
-				let provider = CoCreateCrdt.getProvider(id)
-				let doc_type = CoCreateCrdt.getType(id)
+				let provider = CoCreate.crdt.getProvider(id)
+				let doc_type = CoCreate.crdt.getType(id)
 				
 				let binding = this._createBinding(doc_type, editor, provider)
 				
@@ -89,7 +95,6 @@ window.addEventListener('load', () => {
 		}
 		
 		init(container) {
-			registerModuleSelector(this.selector)
 			this._init(container)
 			this.initSocketEvent()
 		}
@@ -100,14 +105,14 @@ window.addEventListener('load', () => {
 			
 			let elements = mainContainer.querySelectorAll('.quill')
 			
-			if (elements.length == 0 && mainContainer.classList.contains('quill')) {
+			if (elements.length == 0 && mainContainer.classList && mainContainer.classList.contains('quill')) {
 				elements = [mainContainer];
 			}
 			
 			
 			elements.forEach(function(element,index){
-				if (CoCreateUtils) {
-					if (CoCreateInit.getInitialized(element)) {
+				if (CoCreateObserver) {
+					if (CoCreate.observer.getInitialized(element, "cocreate-quill")) {
 						return;
 					}
 				}
@@ -121,8 +126,8 @@ window.addEventListener('load', () => {
 					_this.initYSocket(element, editor)
 					_this.initEvent(element, editor)
 					
-					if (CoCreateUtils) {
-						CoCreateInit.setInitialized(element)
+					if (CoCreateObserver) {
+						CoCreate.observer.setInitialized(element, "cocreate-quill")
 					}
 					_this.elements.push(element)
 					
@@ -152,7 +157,7 @@ window.addEventListener('load', () => {
 			// 			return;
 			// 		}
 			// 		if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-			// 			CoCreate.replaceDataCrdt({
+			// 			CoCreate.crdt.replaceText({
 			// 				collection: collection,
 			// 				document_id: id,
 			// 				name: name,
@@ -172,7 +177,7 @@ window.addEventListener('load', () => {
 			// 	// 		return;
 			// 	// 	}
 			// 	// 	if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-			// 	// 		// CoCreate.replaceDataCrdt({
+			// 	// 		// CoCreate.crdt.replaceText({
 			// 	// 		// 	collection: collection,
 			// 	// 		// 	document_id: id,
 			// 	// 		// 	name: name,
@@ -249,7 +254,7 @@ window.addEventListener('load', () => {
 			const document_id = element.getAttribute('data-document_id');
 			const realtime = element.getAttribute('data-realtime') != "false";
 			if (!document_id && realtime) {
-				CoCreateDocument.requestDocumentId(element)
+				CoCreate.document_id.request(element)
 				element.setAttribute('data-document_id', 'pending');
 			}
 		}
@@ -258,10 +263,10 @@ window.addEventListener('load', () => {
 			const collection = element.getAttribute('data-collection')
 			const document_id = element.getAttribute('data-document_id')
 			const name = element.getAttribute('name')
-			if (element.getAttribute('data-save_value') == 'false') {
+			if (element.getAttribute('data-save_value') == 'false' || document_id == 'null') {
 				return;
 			}
-			CoCreate.replaceDataCrdt({
+			CoCreate.crdt.replaceText({
 				collection, document_id, name, value,
 				update_crud: true
 			})
@@ -282,6 +287,27 @@ window.addEventListener('load', () => {
 
 	// @ts-ignore
 	window.CoCreateQuill = obj_cocreatequill
-	CoCreateInit.registerModules('CoCreateQuill', CoCreateQuill, CoCreateQuill._init);
+
+	if (CoCreateObserver) {
+		CoCreate.observer.add({
+			name: 'CoCreateQuill', 
+			observe: ['subtree', 'childList'],
+			include: '.quill', 
+			callback: function(mutation) {
+				CoCreateQuill._init(mutation.target)
+			}
+		})
+		
+	}
+	
+	if (CoCreate.form) {
+		CoCreate.form.init({
+			name: 'CoCreateQuill',
+			selector: '.quill',
+			callback: function(el) {
+				
+			}
+		})
+	}
 	
 });//end window LOAD

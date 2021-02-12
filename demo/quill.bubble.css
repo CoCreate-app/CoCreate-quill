@@ -1,9 +1,3 @@
-#editor {
-  min-height: 500px;
-}
-
-/*Themes Bubble*/
-
 /*!
  * Quill Editor v1.3.6
  * https://quilljs.com/
@@ -956,9 +950,3 @@
 .ql-container.ql-bubble:not(.ql-disabled) a:hover::after {
   visibility: visible;
 }
-  .quill[data-theme=bubble].ql-container {
-    overflow: visible!important;
-  }
-  .quill[data-theme=bubble] .ql-editor{
-    padding:0px;
-  }

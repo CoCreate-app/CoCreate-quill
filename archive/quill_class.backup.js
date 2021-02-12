@@ -127,7 +127,7 @@ window.addEventListener('load', () => {
       doc.getText(type_id).observe((event) => {
         if (!event.transaction.origin) {
           const content = event.target.toString();
-          CoCreate.updateDocument({
+          CoCreate.crud.updateDocument({
             collection: info.collection,
             document_id: info.document_id,
             data: {[info.name]: content},
