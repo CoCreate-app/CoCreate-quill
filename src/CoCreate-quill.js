@@ -289,7 +289,7 @@ window.addEventListener('load', () => {
 	window.CoCreateQuill = obj_cocreatequill
 
 	if (CoCreateObserver) {
-		CoCreate.observer.add({
+		CoCreate.observer.init({
 			name: 'CoCreateQuill', 
 			observe: ['subtree', 'childList'],
 			include: '.quill', 
