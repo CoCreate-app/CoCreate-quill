@@ -20,7 +20,9 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npx webpack --config webpack.config.js",
     "watch": "webpack --watch",
@@ -34,7 +36,9 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-quill/issues" },
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreate-quill/issues"
+  },
   "homepage": "https://cocreate.app/docs/quill",
   "dependencies": {
     "lib0": "^0.1.7",
