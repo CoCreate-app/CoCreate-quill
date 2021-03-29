@@ -6,7 +6,11 @@ import * as Y from 'yjs'
 import { QuillBinding } from './js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
-import { UserCursor } from '../../../CoCreate-components/CoCreate-crdt/src/utils/cursor/userCursor_class'
+import { UserCursor } from '@cocreate/crdt/src/utils/cursor/userCursor_class'
+
+import crdt from '@cocreate/crdt/src'
+import CoCreateForm from '@cocreate/form/src'
+import CoCreateObserver from '@cocreate/observer/src'
 
 Quill.register('modules/cursors', QuillCursors)
 
@@ -70,11 +74,11 @@ window.addEventListener('load', () => {
 			let document_id = element.getAttribute('data-document_id')
 
 			if (collection && name && document_id) {
-				const id = CoCreate.crdt.generateID(config.organization_Id, collection, document_id, name);
-				CoCreate.crdt.createDoc(id, element);
+				const id = crdt.generateID(config.organization_Id, collection, document_id, name);
+				crdt.createDoc(id, element);
 				
-				let provider = CoCreate.crdt.getProvider(id)
-				let doc_type = CoCreate.crdt.getType(id)
+				let provider = crdt.getProvider(id)
+				let doc_type = crdt.getType(id)
 				
 				let binding = this._createBinding(doc_type, editor, provider)
 				
@@ -112,7 +116,7 @@ window.addEventListener('load', () => {
 			
 			elements.forEach(function(element,index){
 				if (CoCreateObserver) {
-					if (CoCreate.observer.getInitialized(element, "cocreate-quill")) {
+					if (CoCreateObserver.getInitialized(element, "cocreate-quill")) {
 						return;
 					}
 				}
@@ -127,7 +131,7 @@ window.addEventListener('load', () => {
 					_this.initEvent(element, editor)
 					
 					if (CoCreateObserver) {
-						CoCreate.observer.setInitialized(element, "cocreate-quill")
+						CoCreateObserver.setInitialized(element, "cocreate-quill")
 					}
 					_this.elements.push(element)
 					
@@ -157,7 +161,7 @@ window.addEventListener('load', () => {
 			// 			return;
 			// 		}
 			// 		if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-			// 			CoCreate.crdt.replaceText({
+			// 			crdt.replaceText({
 			// 				collection: collection,
 			// 				document_id: id,
 			// 				name: name,
@@ -177,7 +181,7 @@ window.addEventListener('load', () => {
 			// 	// 		return;
 			// 	// 	}
 			// 	// 	if (data['collection'] == collection && data['document_id'] == id && (name in data.data)) {
-			// 	// 		// CoCreate.crdt.replaceText({
+			// 	// 		// crdt.replaceText({
 			// 	// 		// 	collection: collection,
 			// 	// 		// 	document_id: id,
 			// 	// 		// 	name: name,
@@ -254,7 +258,7 @@ window.addEventListener('load', () => {
 			const document_id = element.getAttribute('data-document_id');
 			const realtime = element.getAttribute('data-realtime') != "false";
 			if (!document_id && realtime) {
-				CoCreate.document_id.request(element)
+				CoCreateForm.request({element})
 				element.setAttribute('data-document_id', 'pending');
 			}
 		}
@@ -266,9 +270,11 @@ window.addEventListener('load', () => {
 			if (element.getAttribute('data-save_value') == 'false' || document_id == 'null') {
 				return;
 			}
-			CoCreate.crdt.replaceText({
-				collection, document_id, name, value,
-				update_crud: true
+			crdt.replaceText({
+				collection, document_id, 
+				data: {
+					[name]: value,
+				}
 			})
 		}
 
@@ -289,7 +295,7 @@ window.addEventListener('load', () => {
 	window.CoCreateQuill = obj_cocreatequill
 
 	if (CoCreateObserver) {
-		CoCreate.observer.init({
+		CoCreateObserver.init({
 			name: 'CoCreateQuill', 
 			observe: ['subtree', 'childList'],
 			include: '.quill', 
@@ -300,8 +306,8 @@ window.addEventListener('load', () => {
 		
 	}
 	
-	if (CoCreate.form) {
-		CoCreate.form.init({
+	if (CoCreateForm) {
+		CoCreateForm.init({
 			name: 'CoCreateQuill',
 			selector: '.quill',
 			callback: function(el) {
