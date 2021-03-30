@@ -17,7 +17,12 @@ module.exports = {
     globalObject: "this",
     // publicPath: 'https://server.cocreate.app/CoCreateJS/dist/'
   },
-
+  devServer: {
+    contentBase: path.join(__dirname),
+    compress: true,
+    publicPath: '/dist/'
+  },
+  
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
