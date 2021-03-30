@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.1...v1.0.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* cocreatejs from npm ([f1f337f](https://github.com/CoCreate-app/CoCreate-quill/commit/f1f337f53aaf943579f6afa91b38a2fc7b6acc48))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.0...v1.0.1) (2021-03-29)
 
 
