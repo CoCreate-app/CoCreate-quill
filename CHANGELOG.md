@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.4...v1.0.5) (2021-03-30)
+
+
+### Bug Fixes
+
+* import paths using npm ([4399908](https://github.com/CoCreate-app/CoCreate-quill/commit/4399908a1eb8313bbe15235d33ecfc7e092862af))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.3...v1.0.4) (2021-03-30)
 
 
