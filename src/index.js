@@ -1,9 +1,9 @@
-"use strict";
+
 /* eslint-env browser */
 // @ts-ignore
 
 import * as Y from 'yjs'
-import { QuillBinding } from '/src/js/y-quill_binding'
+import { QuillBinding } from './js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
 import { UserCursor } from '@cocreate/crdt/src/utils/cursor/userCursor_class'
