@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.3...v1.0.4) (2021-03-30)
+
+
+### Bug Fixes
+
+* update to absolute paths for node ([1186c5d](https://github.com/CoCreate-app/CoCreate-quill/commit/1186c5d1c16d20fc64b9881396d90091087cf19e))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
