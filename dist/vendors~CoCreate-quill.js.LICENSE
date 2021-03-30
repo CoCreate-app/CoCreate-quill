@@ -272,10 +272,6 @@
 
 /*! no static exports found */
 
-/*!**************************************!*\
-  !*** ./node_modules/buffer/index.js ***!
-  \**************************************/
-
 /*!***************************************!*\
   !*** ./node_modules/ieee754/index.js ***!
   \***************************************/
@@ -284,9 +280,9 @@
   !*** ./node_modules/isarray/index.js ***!
   \***************************************/
 
-/*!***************************************************!*\
-  !*** ./node_modules/isomorphic.js/iso-browser.js ***!
-  \***************************************************/
+/*!************************************************!*\
+  !*** ./node_modules/isomorphic.js/browser.mjs ***!
+  \************************************************/
 
 /*!*************************************!*\
   !*** ./node_modules/lib0/binary.js ***!
@@ -362,6 +358,10 @@
 
 /*! exports provided: getDate, getUnixTime */
 
+/*!*********************************************************************!*\
+  !*** ./node_modules/node-libs-browser/node_modules/buffer/index.js ***!
+  \*********************************************************************/
+
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
   \*****************************************/
@@ -387,8 +387,6 @@
 /*!***************************************!*\
   !*** ./node_modules/yjs/dist/yjs.mjs ***!
   \***************************************/
-
-/*! exports provided: AbstractConnector, AbstractStruct, AbstractType, Array, ContentAny, ContentBinary, ContentDeleted, ContentEmbed, ContentFormat, ContentJSON, ContentString, ContentType, Doc, GC, ID, Item, Map, PermanentUserData, RelativePosition, Snapshot, Text, Transaction, UndoManager, XmlElement, XmlFragment, XmlHook, XmlText, YArrayEvent, YEvent, YMapEvent, YTextEvent, YXmlEvent, applyUpdate, applyUpdateV2, compareIDs, compareRelativePositions, createAbsolutePositionFromRelativePosition, createDeleteSet, createDeleteSetFromStructStore, createDocFromSnapshot, createID, createRelativePositionFromJSON, createRelativePositionFromTypeIndex, createSnapshot, decodeSnapshot, decodeSnapshotV2, decodeStateVector, decodeStateVectorV2, emptySnapshot, encodeSnapshot, encodeSnapshotV2, encodeStateAsUpdate, encodeStateAsUpdateV2, encodeStateVector, encodeStateVectorV2, equalSnapshots, findRootTypeKey, getItem, getState, getTypeChildren, isDeleted, isParentOf, iterateDeletedStructs, logType, readRelativePosition, readUpdate, readUpdateV2, snapshot, transact, tryGc, typeListToArraySnapshot, typeMapGetSnapshot, writeRelativePosition */
 
 /*!*****************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/array.js ***!
@@ -490,8 +488,6 @@
   !*** ./node_modules/yjs/node_modules/lib0/storage.js ***!
   \*******************************************************/
 
-/*! exports provided: varStorage */
-
 /*!******************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/string.js ***!
   \******************************************************/
@@ -508,7 +504,7 @@
   !*** ./node_modules/yjs/src/internals.js ***!
   \*******************************************/
 
-/*! exports provided: AbstractConnector, DeleteItem, DeleteSet, iterateDeletedStructs, findIndexDS, isDeleted, sortAndMergeDeleteSet, mergeDeleteSets, addToDeleteSet, createDeleteSet, createDeleteSetFromStructStore, writeDeleteSet, readDeleteSet, readAndApplyDeleteSet, generateNewClientId, Doc, AbstractDSDecoder, AbstractUpdateDecoder, DSDecoderV1, UpdateDecoderV1, DSDecoderV2, UpdateDecoderV2, AbstractDSEncoder, AbstractUpdateEncoder, DSEncoderV1, UpdateEncoderV1, DSEncoderV2, UpdateEncoderV2, DefaultDSEncoder, DefaultDSDecoder, DefaultUpdateEncoder, DefaultUpdateDecoder, useV1Encoding, useV2Encoding, writeClientsStructs, readClientsStructRefs, tryResumePendingDeleteReaders, writeStructsFromTransaction, readStructs, readUpdateV2, readUpdate, applyUpdateV2, applyUpdate, writeStateAsUpdate, encodeStateAsUpdateV2, encodeStateAsUpdate, readStateVector, decodeStateVectorV2, decodeStateVector, writeStateVector, writeDocumentStateVector, encodeStateVectorV2, encodeStateVector, EventHandler, createEventHandler, addEventHandlerListener, removeEventHandlerListener, removeAllEventHandlerListeners, callEventHandlerListeners, ID, compareIDs, createID, writeID, readID, findRootTypeKey, isParentOf, logType, PermanentUserData, RelativePosition, createRelativePositionFromJSON, AbsolutePosition, createAbsolutePosition, createRelativePosition, createRelativePositionFromTypeIndex, writeRelativePosition, encodeRelativePosition, readRelativePosition, decodeRelativePosition, createAbsolutePositionFromRelativePosition, compareRelativePositions, Snapshot, equalSnapshots, encodeSnapshotV2, encodeSnapshot, decodeSnapshotV2, decodeSnapshot, createSnapshot, emptySnapshot, snapshot, isVisible, splitSnapshotAffectedStructs, createDocFromSnapshot, StructStore, getStateVector, getState, integretyCheck, addStruct, findIndexSS, find, getItem, findIndexCleanStart, getItemCleanStart, getItemCleanEnd, replaceStruct, iterateStructs, Transaction, writeUpdateMessageFromTransaction, nextID, addChangedTypeToTransaction, tryGc, transact, UndoManager, YEvent, ArraySearchMarker, findMarker, updateMarkerChanges, getTypeChildren, callTypeObservers, AbstractType, typeListSlice, typeListToArray, typeListToArraySnapshot, typeListForEach, typeListMap, typeListCreateIterator, typeListForEachSnapshot, typeListGet, typeListInsertGenericsAfter, typeListInsertGenerics, typeListDelete, typeMapDelete, typeMapSet, typeMapGet, typeMapGetAll, typeMapHas, typeMapGetSnapshot, createMapIterator, YArrayEvent, YArray, readYArray, YMapEvent, YMap, readYMap, ItemTextListPosition, cleanupYTextFormatting, YTextEvent, YText, readYText, YXmlTreeWalker, YXmlFragment, readYXmlFragment, YXmlElement, readYXmlElement, YXmlEvent, YXmlHook, readYXmlHook, YXmlText, readYXmlText, AbstractStruct, structGCRefNumber, GC, ContentBinary, readContentBinary, ContentDeleted, readContentDeleted, ContentDoc, readContentDoc, ContentEmbed, readContentEmbed, ContentFormat, readContentFormat, ContentJSON, readContentJSON, ContentAny, readContentAny, ContentString, readContentString, typeRefs, YArrayRefID, YMapRefID, YTextRefID, YXmlElementRefID, YXmlFragmentRefID, YXmlHookRefID, YXmlTextRefID, ContentType, readContentType, followRedone, keepItem, splitItem, redoItem, Item, readItemContent, contentRefs, AbstractContent */
+/*! exports provided: AbstractConnector, DeleteItem, DeleteSet, iterateDeletedStructs, findIndexDS, isDeleted, sortAndMergeDeleteSet, mergeDeleteSets, addToDeleteSet, createDeleteSet, createDeleteSetFromStructStore, writeDeleteSet, readDeleteSet, readAndApplyDeleteSet, generateNewClientId, Doc, DSDecoderV1, UpdateDecoderV1, DSDecoderV2, UpdateDecoderV2, DSEncoderV1, UpdateEncoderV1, DSEncoderV2, UpdateEncoderV2, writeClientsStructs, readClientsStructRefs, writeStructsFromTransaction, readUpdateV2, readUpdate, applyUpdateV2, applyUpdate, writeStateAsUpdate, encodeStateAsUpdateV2, encodeStateAsUpdate, readStateVector, decodeStateVector, writeStateVector, writeDocumentStateVector, encodeStateVectorV2, encodeStateVector, EventHandler, createEventHandler, addEventHandlerListener, removeEventHandlerListener, removeAllEventHandlerListeners, callEventHandlerListeners, ID, compareIDs, createID, writeID, readID, findRootTypeKey, isParentOf, logType, PermanentUserData, RelativePosition, relativePositionToJSON, createRelativePositionFromJSON, AbsolutePosition, createAbsolutePosition, createRelativePosition, createRelativePositionFromTypeIndex, writeRelativePosition, encodeRelativePosition, readRelativePosition, decodeRelativePosition, createAbsolutePositionFromRelativePosition, compareRelativePositions, Snapshot, equalSnapshots, encodeSnapshotV2, encodeSnapshot, decodeSnapshotV2, decodeSnapshot, createSnapshot, emptySnapshot, snapshot, isVisible, splitSnapshotAffectedStructs, createDocFromSnapshot, StructStore, getStateVector, getState, integretyCheck, addStruct, findIndexSS, find, getItem, findIndexCleanStart, getItemCleanStart, getItemCleanEnd, replaceStruct, iterateStructs, Transaction, writeUpdateMessageFromTransaction, nextID, addChangedTypeToTransaction, tryGc, transact, UndoManager, LazyStructReader, logUpdate, logUpdateV2, LazyStructWriter, mergeUpdates, encodeStateVectorFromUpdateV2, encodeStateVectorFromUpdate, parseUpdateMetaV2, parseUpdateMeta, mergeUpdatesV2, diffUpdateV2, diffUpdate, YEvent, ArraySearchMarker, findMarker, updateMarkerChanges, getTypeChildren, callTypeObservers, AbstractType, typeListSlice, typeListToArray, typeListToArraySnapshot, typeListForEach, typeListMap, typeListCreateIterator, typeListForEachSnapshot, typeListGet, typeListInsertGenericsAfter, typeListInsertGenerics, typeListDelete, typeMapDelete, typeMapSet, typeMapGet, typeMapGetAll, typeMapHas, typeMapGetSnapshot, createMapIterator, YArrayEvent, YArray, readYArray, YMapEvent, YMap, readYMap, ItemTextListPosition, cleanupYTextFormatting, YTextEvent, YText, readYText, YXmlTreeWalker, YXmlFragment, readYXmlFragment, YXmlElement, readYXmlElement, YXmlEvent, YXmlHook, readYXmlHook, YXmlText, readYXmlText, AbstractStruct, structGCRefNumber, GC, ContentBinary, readContentBinary, ContentDeleted, readContentDeleted, ContentDoc, readContentDoc, ContentEmbed, readContentEmbed, ContentFormat, readContentFormat, ContentJSON, readContentJSON, ContentAny, readContentAny, ContentString, readContentString, typeRefs, YArrayRefID, YMapRefID, YTextRefID, YXmlElementRefID, YXmlFragmentRefID, YXmlHookRefID, YXmlTextRefID, ContentType, readContentType, followRedone, keepItem, splitItem, redoItem, Item, readItemContent, contentRefs, AbstractContent, structSkipRefNumber, Skip */
 
 /*!********************************************************!*\
   !*** ./node_modules/yjs/src/structs/AbstractStruct.js ***!
@@ -581,6 +577,12 @@
   \**********************************************/
 
 /*! exports provided: followRedone, keepItem, splitItem, redoItem, Item, readItemContent, contentRefs, AbstractContent */
+
+/*!**********************************************!*\
+  !*** ./node_modules/yjs/src/structs/Skip.js ***!
+  \**********************************************/
+
+/*! exports provided: structSkipRefNumber, Skip */
 
 /*!****************************************************!*\
   !*** ./node_modules/yjs/src/types/AbstractType.js ***!
@@ -676,7 +678,7 @@
   !*** ./node_modules/yjs/src/utils/RelativePosition.js ***!
   \********************************************************/
 
-/*! exports provided: RelativePosition, createRelativePositionFromJSON, AbsolutePosition, createAbsolutePosition, createRelativePosition, createRelativePositionFromTypeIndex, writeRelativePosition, encodeRelativePosition, readRelativePosition, decodeRelativePosition, createAbsolutePositionFromRelativePosition, compareRelativePositions */
+/*! exports provided: RelativePosition, relativePositionToJSON, createRelativePositionFromJSON, AbsolutePosition, createAbsolutePosition, createRelativePosition, createRelativePositionFromTypeIndex, writeRelativePosition, encodeRelativePosition, readRelativePosition, decodeRelativePosition, createAbsolutePositionFromRelativePosition, compareRelativePositions */
 
 /*!************************************************!*\
   !*** ./node_modules/yjs/src/utils/Snapshot.js ***!
@@ -706,13 +708,13 @@
   !*** ./node_modules/yjs/src/utils/UpdateDecoder.js ***!
   \*****************************************************/
 
-/*! exports provided: AbstractDSDecoder, AbstractUpdateDecoder, DSDecoderV1, UpdateDecoderV1, DSDecoderV2, UpdateDecoderV2 */
+/*! exports provided: DSDecoderV1, UpdateDecoderV1, DSDecoderV2, UpdateDecoderV2 */
 
 /*!*****************************************************!*\
   !*** ./node_modules/yjs/src/utils/UpdateEncoder.js ***!
   \*****************************************************/
 
-/*! exports provided: AbstractDSEncoder, AbstractUpdateEncoder, DSEncoderV1, UpdateEncoderV1, DSEncoderV2, UpdateEncoderV2 */
+/*! exports provided: DSEncoderV1, UpdateEncoderV1, DSEncoderV2, UpdateEncoderV2 */
 
 /*!**********************************************!*\
   !*** ./node_modules/yjs/src/utils/YEvent.js ***!
@@ -724,7 +726,7 @@
   !*** ./node_modules/yjs/src/utils/encoding.js ***!
   \************************************************/
 
-/*! exports provided: DefaultDSEncoder, DefaultDSDecoder, DefaultUpdateEncoder, DefaultUpdateDecoder, useV1Encoding, useV2Encoding, writeClientsStructs, readClientsStructRefs, tryResumePendingDeleteReaders, writeStructsFromTransaction, readStructs, readUpdateV2, readUpdate, applyUpdateV2, applyUpdate, writeStateAsUpdate, encodeStateAsUpdateV2, encodeStateAsUpdate, readStateVector, decodeStateVectorV2, decodeStateVector, writeStateVector, writeDocumentStateVector, encodeStateVectorV2, encodeStateVector */
+/*! exports provided: writeClientsStructs, readClientsStructRefs, writeStructsFromTransaction, readUpdateV2, readUpdate, applyUpdateV2, applyUpdate, writeStateAsUpdate, encodeStateAsUpdateV2, encodeStateAsUpdate, readStateVector, decodeStateVector, writeStateVector, writeDocumentStateVector, encodeStateVectorV2, encodeStateVector */
 
 /*!**************************************************!*\
   !*** ./node_modules/yjs/src/utils/isParentOf.js ***!
@@ -737,3 +739,9 @@
   \***********************************************/
 
 /*! exports provided: logType */
+
+/*!***********************************************!*\
+  !*** ./node_modules/yjs/src/utils/updates.js ***!
+  \***********************************************/
+
+/*! exports provided: LazyStructReader, logUpdate, logUpdateV2, LazyStructWriter, mergeUpdates, encodeStateVectorFromUpdateV2, encodeStateVectorFromUpdate, parseUpdateMetaV2, parseUpdateMeta, mergeUpdatesV2, diffUpdateV2, diffUpdate */
