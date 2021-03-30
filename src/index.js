@@ -3,14 +3,14 @@
 // @ts-ignore
 
 import * as Y from 'yjs'
-import { QuillBinding } from './js/y-quill_binding'
+import { QuillBinding } from '/src/js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
 import { UserCursor } from '@cocreate/crdt/src/utils/cursor/userCursor_class'
 
-import crdt from '@cocreate/crdt/src'
-import CoCreateForm from '@cocreate/form/src'
-import CoCreateObserver from '@cocreate/observer/src'
+import crdt from '@cocreate/crdt'
+import CoCreateForm from '@cocreate/form'
+import CoCreateObserver from '@cocreate/observer'
 
 Quill.register('modules/cursors', QuillCursors)
 

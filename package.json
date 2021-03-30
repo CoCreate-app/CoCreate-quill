@@ -42,6 +42,9 @@
 	},
 	"homepage": "https://cocreate.app/docs/quill",
 	"dependencies": {
+    	"@cocreate/observer": "^1.0.0",
+    	"@cocreate/crdt": "^1.0.0",
+    	"@cocreate/form": "^1.0.0",
 		"@cocreate/docs": "^1.0.3",
 		"lib0": "^0.1.7",
 		"mini-css-extract-plugin": "^1.4.0",
