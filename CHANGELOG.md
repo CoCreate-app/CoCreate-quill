@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.2...v1.0.3) (2021-03-30)
+
+
+### Bug Fixes
+
+* build issue ([0c5f5ab](https://github.com/CoCreate-app/CoCreate-quill/commit/0c5f5ab741fdc5491d5dd3490001fe6c668ab5fb))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.1...v1.0.2) (2021-03-30)
 
 
