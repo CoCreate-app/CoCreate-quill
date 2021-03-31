@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.5...v1.0.6) (2021-03-31)
+
+
+### Bug Fixes
+
+* remove yarn.lock and package-lock.json ([eb94417](https://github.com/CoCreate-app/CoCreate-quill/commit/eb94417aed337b6ba35763f339fde9353f7b05dc))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.4...v1.0.5) (2021-03-30)
 
 
