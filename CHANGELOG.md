@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.6...v1.0.7) (2021-04-04)
+
+
+### Bug Fixes
+
+* update socket to socket-lient and crud to crud client" ([d1c496c](https://github.com/CoCreate-app/CoCreate-quill/commit/d1c496c0a32aa0a1f001b60448b7d4c83a333ce8))
+
 ## [1.0.6](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.5...v1.0.6) (2021-03-31)
 
 
