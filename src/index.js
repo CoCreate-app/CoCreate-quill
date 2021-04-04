@@ -7,7 +7,7 @@ import { QuillBinding } from './js/y-quill_binding'
 import Quill from 'quill'
 import QuillCursors from 'quill-cursors'
 import { UserCursor } from '@cocreate/crdt/src/utils/cursor/userCursor_class'
-
+import crud from '@cocreate/crud-client'
 import crdt from '@cocreate/crdt'
 import CoCreateForm from '@cocreate/form'
 import CoCreateObserver from '@cocreate/observer'
@@ -69,9 +69,7 @@ window.addEventListener('load', () => {
 		}
 		
 		initYSocket(element, editor) {
-			let collection = element.getAttribute('data-collection')
-			let name = element.getAttribute('name')
-			let document_id = element.getAttribute('data-document_id')
+			const { collection, document_id, name } = crud.getAttr(element)
 
 			if (collection && name && document_id) {
 				const id = crdt.generateID(config.organization_Id, collection, document_id, name);
@@ -239,24 +237,20 @@ window.addEventListener('load', () => {
 		
 		generateTypeName(element) {
 			try {
-				
-				var collection = element.getAttribute('data-collection') || '_';
-				var document_id = element.getAttribute('data-document_id') || '_';
-				var name = element.getAttribute('name') || '_';
-				
+				let { collection, name, document_id } = crud.getAttr(element)
+				collection = collection || '_'
+				name = name || '_'
+				document_id = document_id || '_'
+				const info = { org:config.organization_Id , collection, document_id, name }
+				return btoa(JSON.stringify(info)); 
 			}catch(error) {
-				
-				console.error(error);    
 				return false
-				
 			}
-			const info = {org:config.organization_Id , collection, document_id, name}
-			return btoa(JSON.stringify(info)); 
 		}
 
 		requestDocumentID(element) {
 			const document_id = element.getAttribute('data-document_id');
-			const realtime = element.getAttribute('data-realtime') != "false";
+			const realtime = crud.isRealtimeAttr(element);
 			if (!document_id && realtime) {
 				CoCreateForm.request({element})
 				element.setAttribute('data-document_id', 'pending');
@@ -264,10 +258,8 @@ window.addEventListener('load', () => {
 		}
 		
 		saveDataIntoDB(element, value) {
-			const collection = element.getAttribute('data-collection')
-			const document_id = element.getAttribute('data-document_id')
-			const name = element.getAttribute('name')
-			if (element.getAttribute('data-save_value') == 'false' || document_id == 'null') {
+			const { collection, document_id, name } = crud.getAttr(element)
+			if (!crud.isSaveAttr(element) || document_id == 'null') {
 				return;
 			}
 			crdt.replaceText({
