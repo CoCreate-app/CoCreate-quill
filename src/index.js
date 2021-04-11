@@ -15,7 +15,7 @@ import CoCreateObserver from '@cocreate/observer'
 Quill.register('modules/cursors', QuillCursors)
 
 
-window.addEventListener('load', () => {
+//window.addEventListener('load', () => {
 	/**
 	 * Create all  Quills with class .quill
 	 * @private
@@ -308,4 +308,4 @@ window.addEventListener('load', () => {
 		})
 	}
 	
-});//end window LOAD
+//});//end window LOAD
