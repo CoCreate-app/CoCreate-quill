@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.7...v1.0.8) (2021-04-14)
+
+
+### Bug Fixes
+
+* update packages ([606c7d5](https://github.com/CoCreate-app/CoCreate-quill/commit/606c7d5e6c04f62e0fa21388c806303cd4f03296))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.6...v1.0.7) (2021-04-04)
 
 
