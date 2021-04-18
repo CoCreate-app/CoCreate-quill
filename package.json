@@ -47,6 +47,7 @@
 		"@cocreate/observer": "^1.0.1",
 		"assign-symbols": "^2.0.2",
 		"braces": "^3.0.2",
+		"clean-webpack-plugin": "^4.0.0-alpha.0",
 		"is-descriptor": "^3.0.0",
 		"lib0": "^0.1.7",
 		"mini-css-extract-plugin": "^1.4.1",
