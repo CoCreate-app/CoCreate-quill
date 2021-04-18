@@ -9,7 +9,7 @@ A simple quill component in vanilla javascript. Easily configured using HTML5 da
 
 ![CoCreate-quill](https://cdn.cocreate.app/docs/CoCreate-quill.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/quill)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/quill)
 
