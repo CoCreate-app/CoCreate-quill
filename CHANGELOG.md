@@ -1,3 +1,11 @@
+## [1.0.9](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.8...v1.0.9) (2021-04-19)
+
+
+### Bug Fixes
+
+* ci and build process ([dd9bdc0](https://github.com/CoCreate-app/CoCreate-quill/commit/dd9bdc020f09ef5a107c6c77fde90eafcf8f3b74))
+* npm publish and cdn deployment ([5d40d74](https://github.com/CoCreate-app/CoCreate-quill/commit/5d40d74f0caac08a49dd08058d514b496068bd15))
+
 ## [1.0.8](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.7...v1.0.8) (2021-04-14)
 
 
