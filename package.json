@@ -50,7 +50,7 @@
 		"clean-webpack-plugin": "^4.0.0-alpha.0",
 		"is-descriptor": "^3.0.0",
 		"lib0": "^0.1.7",
-		"mini-css-extract-plugin": "^1.4.1",
+		"mini-css-extract-plugin": "^1.5.0",
 		"nanomatch": "^1.2.13",
 		"node-libs-browser": "^2.2.1",
 		"posix-character-classes": "^1.0.0",
