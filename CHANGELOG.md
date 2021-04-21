@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.9...v1.0.10) (2021-04-21)
+
+
+### Bug Fixes
+
+* One package for server and client ([3d6f2c1](https://github.com/CoCreate-app/CoCreate-quill/commit/3d6f2c186dd1209e26a92cddeecb236682a22fbd))
+
 ## [1.0.9](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.8...v1.0.9) (2021-04-19)
 
 
