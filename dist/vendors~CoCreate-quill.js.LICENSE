@@ -1,260 +1,12 @@
-/*!****************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/isomorphic.js/browser.mjs ***!
-  \****************************************************************************************************************/
-
-/*! exports provided: performance, cryptoRandomBuffer */
-
-/*!****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/array.js ***!
-  \****************************************************************************************************/
-
-/*! exports provided: last, create, copy, appendTo, from, every, some, equalFlat, flatten */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/binary.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: BIT1, BIT2, BIT3, BIT4, BIT5, BIT6, BIT7, BIT8, BIT9, BIT10, BIT11, BIT12, BIT13, BIT14, BIT15, BIT16, BIT17, BIT18, BIT19, BIT20, BIT21, BIT22, BIT23, BIT24, BIT25, BIT26, BIT27, BIT28, BIT29, BIT30, BIT31, BIT32, BITS0, BITS1, BITS2, BITS3, BITS4, BITS5, BITS6, BITS7, BITS8, BITS9, BITS10, BITS11, BITS12, BITS13, BITS14, BITS15, BITS16, BITS17, BITS18, BITS19, BITS20, BITS21, BITS22, BITS23, BITS24, BITS25, BITS26, BITS27, BITS28, BITS29, BITS30, BITS31, BITS32 */
-
-/*!***************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/broadcastchannel.js ***!
-  \***************************************************************************************************************/
-
-/*! exports provided: subscribe, unsubscribe, publish */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/buffer.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: createUint8ArrayFromLen, createUint8ArrayViewFromArrayBuffer, createUint8ArrayFromArrayBuffer, toBase64, fromBase64, copyUint8Array, encodeAny, decodeAny */
-
-/*!*********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/conditions.js ***!
-  \*********************************************************************************************************/
-
-/*! exports provided: undefinedToNull */
-
-/*!*******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/decoding.js ***!
-  \*******************************************************************************************************/
-
-/*! exports provided: Decoder, createDecoder, hasContent, clone, readUint8Array, readVarUint8Array, readTailAsUint8Array, skip8, readUint8, readUint16, readUint32, readUint32BigEndian, peekUint8, peekUint16, peekUint32, readVarUint, readVarInt, peekVarUint, peekVarInt, readVarString, peekVarString, readFromDataView, readFloat32, readFloat64, readBigInt64, readBigUint64, readAny, RleDecoder, IntDiffDecoder, RleIntDiffDecoder, UintOptRleDecoder, IncUintOptRleDecoder, IntDiffOptRleDecoder, StringDecoder */
-
-/*!**************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/dom.js ***!
-  \**************************************************************************************************/
-
-/*! exports provided: doc, createElement, createDocumentFragment, createTextNode, domParser, emitCustomEvent, setAttributes, setAttributesMap, fragment, append, remove, addEventListener, removeEventListener, addEventListeners, removeEventListeners, element, canvas, text, pairToStyleString, pairsToStyleString, mapToStyleString, querySelector, querySelectorAll, getElementById, parseFragment, parseElement, replaceWith, insertBefore, appendChild, ELEMENT_NODE, TEXT_NODE, CDATA_SECTION_NODE, COMMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE, DOCUMENT_FRAGMENT_NODE, checkNodeType, isParentOf */
-
-/*!*******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/encoding.js ***!
-  \*******************************************************************************************************/
-
-/*! exports provided: Encoder, createEncoder, length, toUint8Array, write, set, writeUint8, setUint8, writeUint16, setUint16, writeUint32, writeUint32BigEndian, setUint32, writeVarUint, writeVarInt, writeVarString, writeBinaryEncoder, writeUint8Array, writeVarUint8Array, writeOnDataView, writeFloat32, writeFloat64, writeBigInt64, writeBigUint64, writeAny, RleEncoder, IntDiffEncoder, RleIntDiffEncoder, UintOptRleEncoder, IncUintOptRleEncoder, IntDiffOptRleEncoder, StringEncoder */
-
-/*!**********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/environment.js ***!
-  \**********************************************************************************************************/
-
-/*! exports provided: isNode, isBrowser, isMac, hasParam, getParam, getVariable, getConf, hasConf, production */
-
-/*!****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/error.js ***!
-  \****************************************************************************************************/
-
-/*! exports provided: create, methodUnimplemented, unexpectedCase */
-
-/*!********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/eventloop.js ***!
-  \********************************************************************************************************/
-
-/*! exports provided: enqueue, timeout, interval, Animation, animationFrame, idleCallback, createDebouncer */
-
-/*!*******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/function.js ***!
-  \*******************************************************************************************************/
-
-/*! exports provided: callAll, nop, apply, id, equalityStrict, equalityFlat, equalityDeep */
-
-/*!********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/indexeddb.js ***!
-  \********************************************************************************************************/
-
-/*! exports provided: rtop, openDB, deleteDB, createStores, transact, count, get, del, put, add, addAutoKey, getAll, getAllKeys, queryFirst, getLastKey, getFirstKey, getAllKeysValues, iterate, iterateKeys, getStore, createIDBKeyRangeBound, createIDBKeyRangeUpperBound, createIDBKeyRangeLowerBound */
-
-/*!*********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/isomorphic.js ***!
-  \*********************************************************************************************************/
-
-/*!*******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/iterator.js ***!
-  \*******************************************************************************************************/
-
-/*! exports provided: mapIterator, createIterator, iteratorFilter, iteratorMap */
-
-/*!***************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/json.js ***!
-  \***************************************************************************************************/
-
-/*! exports provided: stringify, parse */
-
-/*!******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/logging.js ***!
-  \******************************************************************************************************/
-
-/*! exports provided: BOLD, UNBOLD, BLUE, GREY, GREEN, RED, PURPLE, ORANGE, UNCOLOR, print, warn, printError, printImg, printImgBase64, group, groupCollapsed, groupEnd, printDom, printCanvas, vconsoles, VConsole, createVConsole, createModuleLogger */
-
-/*!**************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/map.js ***!
-  \**************************************************************************************************/
-
-/*! exports provided: create, copy, setIfUndefined, map, any, all */
-
-/*!***************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/math.js ***!
-  \***************************************************************************************************/
-
-/*! exports provided: floor, ceil, abs, imul, round, log10, log2, log, sqrt, add, min, max, isNaN, pow, exp10, sign, isNegativeZero */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/metric.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca, deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, prefix */
-
-/*!****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/mutex.js ***!
-  \****************************************************************************************************/
-
-/*! exports provided: createMutex */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/number.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: MAX_SAFE_INTEGER, MIN_SAFE_INTEGER, LOWEST_INT32, HIGHEST_INT32, isInteger, isNaN */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/object.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: create, assign, keys, forEach, map, length, some, every, hasProperty, equalFlat */
-
-/*!*********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/observable.js ***!
-  \*********************************************************************************************************/
-
-/*! exports provided: Observable */
-
-/*!***************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/pair.js ***!
-  \***************************************************************************************************/
-
-/*! exports provided: Pair, create, createReversed, forEach, map */
-
-/*!******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/promise.js ***!
-  \******************************************************************************************************/
-
-/*! exports provided: create, createEmpty, all, reject, resolve, until, wait, isPromise */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/random.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: rand, uint32, oneOf, uuidv4 */
-
-/*!**************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/set.js ***!
-  \**************************************************************************************************/
-
-/*! exports provided: create, toArray */
-
-/*!******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/storage.js ***!
-  \******************************************************************************************************/
-
-/*! exports provided: varStorage, onChange */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/string.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: fromCharCode, fromCodePoint, trimLeft, fromCamelCase, utf8ByteLength, _encodeUtf8Polyfill, utf8TextEncoder, _encodeUtf8Native, encodeUtf8, _decodeUtf8Polyfill, utf8TextDecoder, _decodeUtf8Native, decodeUtf8 */
-
-/*!*****************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/symbol.js ***!
-  \*****************************************************************************************************/
-
-/*! exports provided: create, isSymbol */
-
-/*!***************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/time.js ***!
-  \***************************************************************************************************/
-
-/*! exports provided: getDate, getUnixTime, humanizeDuration */
-
-/*!**************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/lib0/url.js ***!
-  \**************************************************************************************************/
-
-/*! exports provided: decodeQueryParams, encodeQueryParams */
-
-/*!*********************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/y-indexeddb/src/y-indexeddb.js ***!
-  \*********************************************************************************************************************/
-
-/*! exports provided: PREFERRED_TRIM_SIZE, fetchUpdates, storeState, clearDocument, IndexeddbPersistence */
-
-/*!**********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/y-protocols/auth.js ***!
-  \**********************************************************************************************************/
-
-/*! exports provided: messagePermissionDenied, writePermissionDenied, readAuthMessage */
-
-/*!***************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/y-protocols/awareness.js ***!
-  \***************************************************************************************************************/
-
-/*! exports provided: outdatedTimeout, Awareness, removeAwarenessStates, encodeAwarenessUpdate, modifyAwarenessUpdate, applyAwarenessUpdate */
-
-/*!**********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/y-protocols/sync.js ***!
-  \**********************************************************************************************************/
-
-/*! exports provided: messageYjsSyncStep1, messageYjsSyncStep2, messageYjsUpdate, writeSyncStep1, writeSyncStep2, readSyncStep1, readSyncStep2, writeUpdate, readUpdate, readSyncMessage */
-
-/*!*********************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/y-websocket/src/y-websocket.js ***!
-  \*********************************************************************************************************************/
-
-/*! exports provided: WebsocketProvider */
-
-/*!*******************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crdt/node_modules/yjs/dist/yjs.mjs ***!
-  \*******************************************************************************************************/
-
-/*! exports provided: AbstractConnector, AbstractStruct, AbstractType, Array, ContentAny, ContentBinary, ContentDeleted, ContentEmbed, ContentFormat, ContentJSON, ContentString, ContentType, Doc, GC, ID, Item, Map, PermanentUserData, RelativePosition, Snapshot, Text, Transaction, UndoManager, XmlElement, XmlFragment, XmlHook, XmlText, YArrayEvent, YEvent, YMapEvent, YTextEvent, YXmlEvent, applyUpdate, applyUpdateV2, compareIDs, compareRelativePositions, createAbsolutePositionFromRelativePosition, createDeleteSet, createDeleteSetFromStructStore, createDocFromSnapshot, createID, createRelativePositionFromJSON, createRelativePositionFromTypeIndex, createSnapshot, decodeRelativePosition, decodeSnapshot, decodeSnapshotV2, decodeStateVector, diffUpdate, diffUpdateV2, emptySnapshot, encodeRelativePosition, encodeSnapshot, encodeSnapshotV2, encodeStateAsUpdate, encodeStateAsUpdateV2, encodeStateVector, encodeStateVectorFromUpdate, encodeStateVectorFromUpdateV2, equalSnapshots, findRootTypeKey, getItem, getState, getTypeChildren, isDeleted, isParentOf, iterateDeletedStructs, logType, logUpdate, logUpdateV2, mergeUpdates, mergeUpdatesV2, parseUpdateMeta, parseUpdateMetaV2, readUpdate, readUpdateV2, relativePositionToJSON, snapshot, transact, tryGc, typeListToArraySnapshot, typeMapGetSnapshot */
-
-/*!***************************************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crud-client/node_modules/@cocreate/socket-client/src/common-fun.js ***!
-  \***************************************************************************************************************************************/
-
-/*! no static exports found */
-
-/*!**********************************************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/CoCreate-components/CoCreate-crud-client/node_modules/@cocreate/socket-client/src/index.js ***!
-  \**********************************************************************************************************************************/
-
-/*!*********************************************************************************************************!*\
-  !*** /home/ubuntu/environment/public/node_modules/style-loader/dist/runtime/injectStylesIntoLinkTag.js ***!
-  \*********************************************************************************************************/
+/*!****************************************************!*\
+  !*** ./node_modules/@cocreate/action/src/index.js ***!
+  \****************************************************/
+
+/*! exports provided: default */
 
 /*!*************************************************!*\
   !*** ./node_modules/@cocreate/crdt/src/core.js ***!
   \*************************************************/
-
-/*! exports provided: default */
 
 /*!**************************************************!*\
   !*** ./node_modules/@cocreate/crdt/src/index.js ***!
@@ -276,6 +28,8 @@
   !*** ./node_modules/@cocreate/crud-client/src/crud.js ***!
   \********************************************************/
 
+/*! no static exports found */
+
 /*!*********************************************************!*\
   !*** ./node_modules/@cocreate/crud-client/src/index.js ***!
   \*********************************************************/
@@ -284,6 +38,14 @@
   !*** ./node_modules/@cocreate/crud-client/src/utils.crud.js ***!
   \**************************************************************/
 
+/*!*****************************************************************!*\
+  !*** ./node_modules/@cocreate/cursors/src/CoCreate-cursors.css ***!
+  \*****************************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/@cocreate/cursors/src/index.js ***!
+  \*****************************************************/
+
 /*!**************************************************!*\
   !*** ./node_modules/@cocreate/form/src/index.js ***!
   \**************************************************/
@@ -291,6 +53,10 @@
 /*!**************************************************!*\
   !*** ./node_modules/@cocreate/form/src/utils.js ***!
   \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/@cocreate/input/src/index.js ***!
+  \***************************************************/
 
 /*!******************************************************!*\
   !*** ./node_modules/@cocreate/observer/src/index.js ***!
@@ -303,6 +69,12 @@
 /*!***********************************************************!*\
   !*** ./node_modules/@cocreate/socket-client/src/index.js ***!
   \***********************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/@cocreate/utils/src/index.js ***!
+  \***************************************************/
+
+/*! exports provided: generateUUID, getParentFromElement, isJsonString, getAttributes, checkValue, allFrame, cssPath, getTopMostWindow, findIframeFromElement, getIframeFromPath, configMatch, configExecuter, UUID, parseTextToHtml, splitBydelimiter, joinBydelimiter, isValidSelector, getElementPath, default */
 
 /*!******************************************!*\
   !*** ./node_modules/asn1.js/lib/asn1.js ***!
@@ -359,10 +131,6 @@
 /*!*******************************************************!*\
   !*** ./node_modules/asn1.js/lib/asn1/encoders/pem.js ***!
   \*******************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/asn1.js/node_modules/bn.js/lib/bn.js ***!
-  \***********************************************************/
 
 /*!*****************************************!*\
   !*** ./node_modules/base64-js/index.js ***!
@@ -462,6 +230,10 @@
   !*** ./node_modules/browserify-rsa/index.js ***!
   \**********************************************/
 
+/*!******************************************************************!*\
+  !*** ./node_modules/browserify-rsa/node_modules/bn.js/lib/bn.js ***!
+  \******************************************************************/
+
 /*!***********************************************!*\
   !*** ./node_modules/browserify-sign/algos.js ***!
   \***********************************************/
@@ -489,6 +261,10 @@
 /*!********************************************************!*\
   !*** ./node_modules/browserify-sign/browser/verify.js ***!
   \********************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/browserify-sign/node_modules/bn.js/lib/bn.js ***!
+  \*******************************************************************/
 
 /*!*************************************************************************************!*\
   !*** ./node_modules/browserify-sign/node_modules/readable-stream/errors-browser.js ***!
@@ -554,10 +330,6 @@
   !*** ./node_modules/buffer-xor/index.js ***!
   \******************************************/
 
-/*!**************************************!*\
-  !*** ./node_modules/buffer/index.js ***!
-  \**************************************/
-
 /*!*******************************************!*\
   !*** ./node_modules/cipher-base/index.js ***!
   \*******************************************/
@@ -569,10 +341,6 @@
 /*!*********************************************!*\
   !*** ./node_modules/create-ecdh/browser.js ***!
   \*********************************************/
-
-/*!***************************************************************!*\
-  !*** ./node_modules/create-ecdh/node_modules/bn.js/lib/bn.js ***!
-  \***************************************************************/
 
 /*!*********************************************!*\
   !*** ./node_modules/create-hash/browser.js ***!
@@ -636,10 +404,6 @@
 
 /*! exports provided: modp1, modp2, modp5, modp14, modp15, modp16, modp17, modp18, default */
 
-/*!******************************************************************!*\
-  !*** ./node_modules/diffie-hellman/node_modules/bn.js/lib/bn.js ***!
-  \******************************************************************/
-
 /*!***********************************************!*\
   !*** ./node_modules/elliptic/lib/elliptic.js ***!
   \***********************************************/
@@ -700,10 +464,6 @@
   !*** ./node_modules/elliptic/lib/elliptic/utils.js ***!
   \*****************************************************/
 
-/*!************************************************************!*\
-  !*** ./node_modules/elliptic/node_modules/bn.js/lib/bn.js ***!
-  \************************************************************/
-
 /*!********************************************!*\
   !*** ./node_modules/elliptic/package.json ***!
   \********************************************/
@@ -717,6 +477,10 @@
 /*!**********************************************!*\
   !*** ./node_modules/evp_bytestokey/index.js ***!
   \**********************************************/
+
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js!./node_modules/@cocreate/cursors/src/CoCreate-cursors.css ***!
+  \********************************************************************************************************/
 
 /*!*****************************************!*\
   !*** ./node_modules/hash-base/index.js ***!
@@ -850,9 +614,13 @@
   !*** ./node_modules/isomorphic.js/browser.mjs ***!
   \************************************************/
 
+/*! exports provided: performance, cryptoRandomBuffer */
+
 /*!*************************************!*\
   !*** ./node_modules/lib0/binary.js ***!
   \*************************************/
+
+/*! exports provided: BIT1, BIT2, BIT3, BIT4, BIT5, BIT6, BIT7, BIT8, BIT9, BIT10, BIT11, BIT12, BIT13, BIT14, BIT15, BIT16, BIT17, BIT18, BIT19, BIT20, BIT21, BIT22, BIT23, BIT24, BIT25, BIT26, BIT27, BIT28, BIT29, BIT30, BIT31, BIT32, BITS0, BITS1, BITS2, BITS3, BITS4, BITS5, BITS6, BITS7, BITS8, BITS9, BITS10, BITS11, BITS12, BITS13, BITS14, BITS15, BITS16, BITS17, BITS18, BITS19, BITS20, BITS21, BITS22, BITS23, BITS24, BITS25, BITS26, BITS27, BITS28, BITS29, BITS30, BITS31, BITS32 */
 
 /*!*************************************!*\
   !*** ./node_modules/lib0/buffer.js ***!
@@ -863,6 +631,8 @@
 /*!*****************************************!*\
   !*** ./node_modules/lib0/conditions.js ***!
   \*****************************************/
+
+/*! exports provided: undefinedToNull */
 
 /*!***************************************!*\
   !*** ./node_modules/lib0/decoding.js ***!
@@ -892,6 +662,8 @@
   !*** ./node_modules/lib0/map.js ***!
   \**********************************/
 
+/*! exports provided: create, copy, setIfUndefined, map, any, all */
+
 /*!***********************************!*\
   !*** ./node_modules/lib0/math.js ***!
   \***********************************/
@@ -902,13 +674,19 @@
   !*** ./node_modules/lib0/mutex.js ***!
   \************************************/
 
+/*! exports provided: createMutex */
+
 /*!*************************************!*\
   !*** ./node_modules/lib0/number.js ***!
   \*************************************/
 
+/*! exports provided: MAX_SAFE_INTEGER, MIN_SAFE_INTEGER, LOWEST_INT32, HIGHEST_INT32, isInteger, isNaN */
+
 /*!*****************************************!*\
   !*** ./node_modules/lib0/observable.js ***!
   \*****************************************/
+
+/*! exports provided: Observable */
 
 /*!*************************************!*\
   !*** ./node_modules/lib0/random.js ***!
@@ -920,9 +698,13 @@
   !*** ./node_modules/lib0/set.js ***!
   \**********************************/
 
+/*! exports provided: create, toArray */
+
 /*!*************************************!*\
   !*** ./node_modules/lib0/string.js ***!
   \*************************************/
+
+/*! exports provided: fromCharCode, fromCodePoint, trimLeft, fromCamelCase, utf8ByteLength, _encodeUtf8Polyfill, utf8TextEncoder, _encodeUtf8Native, encodeUtf8, _decodeUtf8Polyfill, utf8TextDecoder, _decodeUtf8Native, decodeUtf8 */
 
 /*!***********************************!*\
   !*** ./node_modules/lib0/time.js ***!
@@ -938,10 +720,6 @@
   !*** ./node_modules/miller-rabin/lib/mr.js ***!
   \*********************************************/
 
-/*!****************************************************************!*\
-  !*** ./node_modules/miller-rabin/node_modules/bn.js/lib/bn.js ***!
-  \****************************************************************/
-
 /*!***************************************************!*\
   !*** ./node_modules/minimalistic-assert/index.js ***!
   \***************************************************/
@@ -949,6 +727,10 @@
 /*!*************************************************************!*\
   !*** ./node_modules/minimalistic-crypto-utils/lib/utils.js ***!
   \*************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/node-libs-browser/node_modules/buffer/index.js ***!
+  \*********************************************************************/
 
 /*!********************************************!*\
   !*** ./node_modules/parse-asn1/aesid.json ***!
@@ -1011,10 +793,6 @@
 /*!********************************************!*\
   !*** ./node_modules/public-encrypt/mgf.js ***!
   \********************************************/
-
-/*!******************************************************************!*\
-  !*** ./node_modules/public-encrypt/node_modules/bn.js/lib/bn.js ***!
-  \******************************************************************/
 
 /*!*******************************************************!*\
   !*** ./node_modules/public-encrypt/privateDecrypt.js ***!
@@ -1160,6 +938,10 @@
   !*** ./node_modules/string_decoder/lib/string_decoder.js ***!
   \***********************************************************/
 
+/*!***************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoLinkTag.js ***!
+  \***************************************************************************/
+
 /*!************************************************!*\
   !*** ./node_modules/timers-browserify/main.js ***!
   \************************************************/
@@ -1180,13 +962,19 @@
   !*** ./node_modules/y-indexeddb/node_modules/lib0/array.js ***!
   \*************************************************************/
 
+/*! exports provided: last, create, copy, appendTo, from, every, some, equalFlat, flatten */
+
 /*!*************************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/error.js ***!
   \*************************************************************/
 
+/*! exports provided: create, methodUnimplemented, unexpectedCase */
+
 /*!*****************************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/indexeddb.js ***!
   \*****************************************************************/
+
+/*! exports provided: rtop, openDB, deleteDB, createStores, transact, count, get, del, put, add, addAutoKey, getAll, getAllKeys, queryFirst, getLastKey, getFirstKey, getAllKeysValues, iterate, iterateKeys, getStore, createIDBKeyRangeBound, createIDBKeyRangeUpperBound, createIDBKeyRangeLowerBound */
 
 /*!***********************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/map.js ***!
@@ -1196,9 +984,13 @@
   !*** ./node_modules/y-indexeddb/node_modules/lib0/math.js ***!
   \************************************************************/
 
+/*! exports provided: floor, ceil, abs, imul, round, log10, log2, log, sqrt, add, min, max, isNaN, pow, exp10, sign, isNegativeZero */
+
 /*!**************************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/metric.js ***!
   \**************************************************************/
+
+/*! exports provided: yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca, deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, prefix */
 
 /*!*************************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/mutex.js ***!
@@ -1212,6 +1004,8 @@
   !*** ./node_modules/y-indexeddb/node_modules/lib0/promise.js ***!
   \***************************************************************/
 
+/*! exports provided: create, createEmpty, all, reject, resolve, until, wait, isPromise */
+
 /*!***********************************************************!*\
   !*** ./node_modules/y-indexeddb/node_modules/lib0/set.js ***!
   \***********************************************************/
@@ -1220,9 +1014,13 @@
   !*** ./node_modules/y-indexeddb/node_modules/lib0/time.js ***!
   \************************************************************/
 
+/*! exports provided: getDate, getUnixTime, humanizeDuration */
+
 /*!*****************************************************!*\
   !*** ./node_modules/y-indexeddb/src/y-indexeddb.js ***!
   \*****************************************************/
+
+/*! exports provided: PREFERRED_TRIM_SIZE, fetchUpdates, storeState, clearDocument, IndexeddbPersistence */
 
 /*!***********************************************!*\
   !*** ./node_modules/y-protocols/awareness.js ***!
@@ -1242,9 +1040,13 @@
   !*** ./node_modules/y-websocket/node_modules/lib0/broadcastchannel.js ***!
   \************************************************************************/
 
+/*! exports provided: subscribe, unsubscribe, publish */
+
 /*!**************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/buffer.js ***!
   \**************************************************************/
+
+/*! exports provided: createUint8ArrayFromLen, createUint8ArrayViewFromArrayBuffer, createUint8ArrayFromArrayBuffer, toBase64, fromBase64, copyUint8Array, encodeAny, decodeAny */
 
 /*!******************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/conditions.js ***!
@@ -1254,17 +1056,25 @@
   !*** ./node_modules/y-websocket/node_modules/lib0/decoding.js ***!
   \****************************************************************/
 
+/*! exports provided: Decoder, createDecoder, hasContent, clone, readUint8Array, readVarUint8Array, readTailAsUint8Array, skip8, readUint8, readUint16, readUint32, readUint32BigEndian, peekUint8, peekUint16, peekUint32, readVarUint, readVarInt, peekVarUint, peekVarInt, readVarString, peekVarString, readFromDataView, readFloat32, readFloat64, readBigInt64, readBigUint64, readAny, RleDecoder, IntDiffDecoder, RleIntDiffDecoder, UintOptRleDecoder, IncUintOptRleDecoder, IntDiffOptRleDecoder, StringDecoder */
+
 /*!****************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/encoding.js ***!
   \****************************************************************/
+
+/*! exports provided: Encoder, createEncoder, length, toUint8Array, write, set, writeUint8, setUint8, writeUint16, setUint16, writeUint32, writeUint32BigEndian, setUint32, writeVarUint, writeVarInt, writeVarString, writeBinaryEncoder, writeUint8Array, writeVarUint8Array, writeOnDataView, writeFloat32, writeFloat64, writeBigInt64, writeBigUint64, writeAny, RleEncoder, IntDiffEncoder, RleIntDiffEncoder, UintOptRleEncoder, IncUintOptRleEncoder, IntDiffOptRleEncoder, StringEncoder */
 
 /*!*******************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/environment.js ***!
   \*******************************************************************/
 
+/*! exports provided: isNode, isBrowser, isMac, hasParam, getParam, getVariable, getConf, hasConf, production */
+
 /*!****************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/function.js ***!
   \****************************************************************/
+
+/*! exports provided: callAll, nop, apply, id, equalityStrict, equalityFlat, equalityDeep */
 
 /*!***********************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/map.js ***!
@@ -1290,6 +1100,8 @@
   !*** ./node_modules/y-websocket/node_modules/lib0/object.js ***!
   \**************************************************************/
 
+/*! exports provided: create, assign, keys, forEach, map, length, some, every, hasProperty, equalFlat */
+
 /*!******************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/observable.js ***!
   \******************************************************************/
@@ -1301,6 +1113,8 @@
 /*!***************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/storage.js ***!
   \***************************************************************/
+
+/*! exports provided: varStorage, onChange */
 
 /*!**************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/lib0/string.js ***!
@@ -1314,25 +1128,37 @@
   !*** ./node_modules/y-websocket/node_modules/lib0/url.js ***!
   \***********************************************************/
 
+/*! exports provided: decodeQueryParams, encodeQueryParams */
+
 /*!*******************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/y-protocols/auth.js ***!
   \*******************************************************************/
+
+/*! exports provided: messagePermissionDenied, writePermissionDenied, readAuthMessage */
 
 /*!************************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/y-protocols/awareness.js ***!
   \************************************************************************/
 
+/*! exports provided: outdatedTimeout, Awareness, removeAwarenessStates, encodeAwarenessUpdate, modifyAwarenessUpdate, applyAwarenessUpdate */
+
 /*!*******************************************************************!*\
   !*** ./node_modules/y-websocket/node_modules/y-protocols/sync.js ***!
   \*******************************************************************/
+
+/*! exports provided: messageYjsSyncStep1, messageYjsSyncStep2, messageYjsUpdate, writeSyncStep1, writeSyncStep2, readSyncStep1, readSyncStep2, writeUpdate, readUpdate, readSyncMessage */
 
 /*!*****************************************************!*\
   !*** ./node_modules/y-websocket/src/y-websocket.js ***!
   \*****************************************************/
 
+/*! exports provided: WebsocketProvider */
+
 /*!***************************************!*\
   !*** ./node_modules/yjs/dist/yjs.mjs ***!
   \***************************************/
+
+/*! exports provided: AbstractConnector, AbstractStruct, AbstractType, Array, ContentAny, ContentBinary, ContentDeleted, ContentEmbed, ContentFormat, ContentJSON, ContentString, ContentType, Doc, GC, ID, Item, Map, PermanentUserData, RelativePosition, Snapshot, Text, Transaction, UndoManager, XmlElement, XmlFragment, XmlHook, XmlText, YArrayEvent, YEvent, YMapEvent, YTextEvent, YXmlEvent, applyUpdate, applyUpdateV2, compareIDs, compareRelativePositions, createAbsolutePositionFromRelativePosition, createDeleteSet, createDeleteSetFromStructStore, createDocFromSnapshot, createID, createRelativePositionFromJSON, createRelativePositionFromTypeIndex, createSnapshot, decodeRelativePosition, decodeSnapshot, decodeSnapshotV2, decodeStateVector, diffUpdate, diffUpdateV2, emptySnapshot, encodeRelativePosition, encodeSnapshot, encodeSnapshotV2, encodeStateAsUpdate, encodeStateAsUpdateV2, encodeStateVector, encodeStateVectorFromUpdate, encodeStateVectorFromUpdateV2, equalSnapshots, findRootTypeKey, getItem, getState, getTypeChildren, isDeleted, isParentOf, iterateDeletedStructs, logType, logUpdate, logUpdateV2, mergeUpdates, mergeUpdatesV2, parseUpdateMeta, parseUpdateMetaV2, readUpdate, readUpdateV2, relativePositionToJSON, snapshot, transact, tryGc, typeListToArraySnapshot, typeMapGetSnapshot */
 
 /*!*****************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/array.js ***!
@@ -1358,6 +1184,8 @@
   !*** ./node_modules/yjs/node_modules/lib0/dom.js ***!
   \***************************************************/
 
+/*! exports provided: doc, createElement, createDocumentFragment, createTextNode, domParser, emitCustomEvent, setAttributes, setAttributesMap, fragment, append, remove, addEventListener, removeEventListener, addEventListeners, removeEventListeners, element, canvas, text, pairToStyleString, pairsToStyleString, mapToStyleString, querySelector, querySelectorAll, getElementById, parseFragment, parseElement, replaceWith, insertBefore, appendChild, ELEMENT_NODE, TEXT_NODE, CDATA_SECTION_NODE, COMMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE, DOCUMENT_FRAGMENT_NODE, checkNodeType, isParentOf */
+
 /*!********************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/encoding.js ***!
   \********************************************************/
@@ -1374,6 +1202,8 @@
   !*** ./node_modules/yjs/node_modules/lib0/eventloop.js ***!
   \*********************************************************/
 
+/*! exports provided: enqueue, timeout, interval, Animation, animationFrame, idleCallback, createDebouncer */
+
 /*!********************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/function.js ***!
   \********************************************************/
@@ -1386,13 +1216,19 @@
   !*** ./node_modules/yjs/node_modules/lib0/iterator.js ***!
   \********************************************************/
 
+/*! exports provided: mapIterator, createIterator, iteratorFilter, iteratorMap */
+
 /*!****************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/json.js ***!
   \****************************************************/
 
+/*! exports provided: stringify, parse */
+
 /*!*******************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/logging.js ***!
   \*******************************************************/
+
+/*! exports provided: BOLD, UNBOLD, BLUE, GREY, GREEN, RED, PURPLE, ORANGE, UNCOLOR, print, warn, printError, printImg, printImgBase64, group, groupCollapsed, groupEnd, printDom, printCanvas, vconsoles, VConsole, createVConsole, createModuleLogger */
 
 /*!***************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/map.js ***!
@@ -1422,9 +1258,13 @@
   !*** ./node_modules/yjs/node_modules/lib0/pair.js ***!
   \****************************************************/
 
+/*! exports provided: Pair, create, createReversed, forEach, map */
+
 /*!******************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/random.js ***!
   \******************************************************/
+
+/*! exports provided: rand, uint32, oneOf, uuidv4 */
 
 /*!***************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/set.js ***!
@@ -1441,6 +1281,8 @@
 /*!******************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/symbol.js ***!
   \******************************************************/
+
+/*! exports provided: create, isSymbol */
 
 /*!****************************************************!*\
   !*** ./node_modules/yjs/node_modules/lib0/time.js ***!
