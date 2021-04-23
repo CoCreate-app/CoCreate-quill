@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.10...v1.0.11) (2021-04-23)
+
+
+### Bug Fixes
+
+* readme and documentation. Removed securitykeys ([3d24928](https://github.com/CoCreate-app/CoCreate-quill/commit/3d249289d83100b6855f6fe93dde8e3f5bdaa394))
+
 ## [1.0.10](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.9...v1.0.10) (2021-04-21)
 
 
