@@ -26,7 +26,7 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 ## NPM
 
 ```shell
-$ npm install @cocreate/quill
+$ npm i @cocreate/quill
 ```
 
 # Table of Contents
