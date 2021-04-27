@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.11...v1.0.12) (2021-04-27)
+
+
+### Bug Fixes
+
+* Update to readme, demo, added cdn scripts ([9084282](https://github.com/CoCreate-app/CoCreate-quill/commit/9084282b032a51e7614b66e822f55c379a3a77db))
+
 ## [1.0.11](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.10...v1.0.11) (2021-04-23)
 
 
