@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.12...v1.0.13) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([704bfc5](https://github.com/CoCreate-app/CoCreate-quill/commit/704bfc5f60ec0092321771205a16f76e7e3a15bf))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.11...v1.0.12) (2021-04-27)
 
 
