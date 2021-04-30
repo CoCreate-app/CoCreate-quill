@@ -10,7 +10,7 @@ module.exports = {
             "path": "./docs/index.html",
             "collection": "files",
             "document_id": "6029c06ae979fb17407e25e2",
-            "key": "html",
+            "key": "src",
             "data":{
                 "name": "quill Doc",
                 "domains": ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
