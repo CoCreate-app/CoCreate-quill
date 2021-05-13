@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.13...v1.0.14) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([59be7d5](https://github.com/CoCreate-app/CoCreate-quill/commit/59be7d52c5330161db9a5401b45ab66671dac55b))
+
 ## [1.0.13](https://github.com/CoCreate-app/CoCreate-quill/compare/v1.0.12...v1.0.13) (2021-04-27)
 
 
