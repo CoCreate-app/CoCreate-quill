@@ -309,3 +309,4 @@ Quill.register('modules/cursors', QuillCursors)
 	}
 	
 //});//end window LOAD
+export default CoCreateYjsQuill;
